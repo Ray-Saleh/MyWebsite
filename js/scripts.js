@@ -58,7 +58,7 @@ ScrollReveal().reveal('.home-content p, .about-content',{origin: 'right'})
 
 //Multple text typed js
 const typed = new Typed('.multiple-text', {
-    strings: ['Full Stack Developer', 'Frontend Developer', 'Computer Architect'],
+    strings: ['Computer Science Student', 'Student Developer', ' Student Computer Architect'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
