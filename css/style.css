@@ -11,6 +11,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* Root Colors */
 :root {
     --bg-color: #1f242d;
     --second-bg-color:  #323946;
@@ -19,16 +20,25 @@
 
 }
 
+/* HTML format */
 html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
 
+/* Body basic color */
 body {
     background: var(--bg-color);
     color: var(--text-color);
 }
 
+/* Sections format */
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+/* Header Format */
 .header {
     position: fixed;
     top: 0;
@@ -42,6 +52,7 @@ body {
     z-index: 100;
 }
 
+/* Logo font size for Portfolio title */
 .logo {
     font-size: 2.5rem;
     color: var(--text-color);
@@ -49,6 +60,7 @@ body {
     cursor: default;
 }
 
+/*Font for navagation bar  */
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
@@ -56,14 +68,92 @@ body {
     transition: .2s;
 }
 
+/* Navagation bar */
 .navbar a:hover
 .navbar a.activate {
     color: var(--main-color)
 }
 
+/* Icon for menu button */
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
 }
+
+/* Home formatting */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Image size of home */
+.home-img,
+.home-img:nth-of-type(1) {
+    /*Change depending on picture size*/
+    width: 50vw;
+
+    margin-left: 6rem;
+}
+
+/* Font size in h3 of home-content */
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+/* Creates a margin on the bottom of 2 pixels */
+.home-content h3:nth-of-type(1) {
+    margin-bottom: 2rem;
+}
+
+span {
+    color: var(--main-color);
+}
+
+/* Font size in h1 of home-content */
+.home-content h1 { 
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+/* Font Size for paragraph parameters in home-content */
+.home-content p {
+    font-size: 1.6rem;
+}
+
+/* Setup for social media + when hovering over icon
+    goes to a:hover */
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5 ease;
+}
+
+/* When hovering over social media icons 
+    creats a glow effect when hovering*/
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* Button for resume color and setup */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
 
